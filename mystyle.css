@@ -1,0 +1,514 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	font-family: Helvetica;
+	color: black;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+
+.last {
+	width: 100%;
+	height: 40vh;
+	background-color: black;
+	position: absolute;
+	top: 440vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	align-self: center
+}
+
+.contatos {
+	color: white;
+	font-family: Helvetica;
+	font-size: 1em;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	position: absolute;
+	top:10px;
+	text-align: center;
+	font-weight: bold;
+}
+
+
+.profile {
+	position: absolute;
+	right: 0;
+	top: -30px;
+	z-index: -1111;
+}
+
+
+img {
+	max-width: 100%;
+}
+
+.logos {
+	width: 700px;
+	position: absolute;
+	top: 60px;
+	display: flex;
+	align-self: center;
+	align-items: flex-start;
+}
+
+.logos2 {
+	width: 700px;
+	position: absolute;
+	top: 240px;
+	display: flex;
+	align-self: center;
+	align-items: flex-start;
+}
+
+.forth {
+	width: 30%;
+	margin-left: 30px;
+}
+
+.thir {
+	width: 40%;
+	margin-left: 30px;
+}
+
+.cunha {
+	width: 40%;
+	margin-left: 30px;
+}
+
+.sec {
+	width: 20%;
+	margin-left: 30px;
+}
+
+.hh {
+	width: 20%;
+}
+
+.empresas {
+	color: white;
+	font-family: Helvetica;
+	font-size: 1em;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	position: absolute;
+	top:10px;
+	text-align: center;
+}
+
+
+.pri {
+	filter: invert(100%);
+	width: 20%;
+}
+
+.recruit {
+	width: 100%;
+	height: 70vh;
+	background-color: black;
+	position: absolute;
+	top: 160vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	align-self: center
+}
+
+.skills {
+	width: 100vw;
+	background-color: white;
+	position: absolute;
+	display: flex;
+	top: 230vh;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.c {
+	justify-content: space-around;
+	color: white;
+	font-family: Helvetica;
+	font-size: 1em;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	text-align: center;
+	margin-top: 20px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.c:hover {
+	color: #e5ed0b;
+	transition: 300ms linear all;
+}
+
+.link {
+	fill: white;
+}
+
+
+.link:hover {
+	fill: #e5ed0b;
+	transition: 300ms linear all;
+}
+
+
+.title2 {
+	justify-content: space-around;
+	color: black;
+	font-family: Helvetica;
+	font-size: 1em;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	text-align: center;
+	margin-top: 20px;
+	font-weight: bold;
+}
+
+.htmlcss {
+	align-self: center;
+	width: 50%;
+	margin-top: 20px;
+}
+
+.exp {
+	display: flex;
+	flex-direction: column;
+}
+
+.exp2 {
+	display: flex;
+	flex-direction: column;
+}
+
+.texthtml {
+	color:  black;
+	font-family: Helvetica;
+	font-weight: lighter;
+	font-size: 1.2em;
+	text-align: center;
+	margin: 30px 200px 30px 200px;
+	line-height: 40px;
+	letter-spacing: 0.2em;
+}
+
+.arrows {
+	width: 60px;
+	height: 72px;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+	bottom: 0px;
+	animation: updown 5s infinite;
+}
+
+.arrows path {
+	stroke: white;
+	fill: transparent;
+	stroke-width: 3px;
+}
+
+
+
+@keyframes updown {
+	0% {
+		bottom: 0;
+	}
+	50% {
+		bottom: 20px;
+	}
+	100% {
+		bottom: 0;
+	}
+}
+
+.test {
+	height: 400px;
+	background-color: white;
+	position: absolute;
+	top: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.down {
+	background-color: #0b1aed;
+	width: 250px;
+	margin-top: 30px;
+	padding: 15px 15px;
+	font-family: Helvetica;
+	text-transform: uppercase;
+	color: white;
+	border-radius: solid 0 0;
+	box-shadow: none;
+	font-weight: bold;
+	letter-spacing: 0.2em;
+	box-shadow: 0px;
+	border: none;
+	transition: 300ms linear all;
+	cursor: pointer;
+}
+
+.down:hover{
+	background-color: #e5ed0b;
+	color: #0b1aed;
+}
+
+@media (max-width: 1024px) and (orientation: landscape){ /* tablet and smaller */
+  body:after{
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    display: block;
+    top: 0;
+    bottom: 0;
+    content: "";
+    background: black url("../assets/tres.png") center center no-repeat;; /* replace with an image that tells the visitor to rotate the device to landscape mode */
+    background-size: 100% 100%;
+    min-height: 100vh;
+  }
+  html, body {margin: 0; height: 100%; overflow: hidden}
+}
+
+h3 {
+	color:  black;
+	font-family: Helvetica;
+	font-weight: lighter;
+	font-size: 1.6em;
+	text-align: center;
+	margin: 0 200px 0 200px;
+	line-height: 40px;
+	letter-spacing: 0.2em;
+
+}
+::-moz-selection { background: #e5ed0b; }
+::selection { background: #e5ed0b; }
+
+body {
+  min-width:100%;
+}
+
+.blue {
+	background-color: #0b1aed;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	z-index: -1;
+}
+
+html, body {
+    overflow-x:hidden;
+}
+
+.page-header {
+  @supports (-webkit-appearance:none) {
+    .os-android & {
+      min-height: calc(100vh - 56px);
+    }
+  }
+}
+
+
+.hello {
+	position: fixed;
+	display: flex;
+	width: 100%;
+	margin: 20px 20px 0 20px;
+}
+
+header {
+	display: flex;
+	position: fixed;
+	height: 60px;
+	z-index: 400;
+	width: 100vw;
+	transition: 300ms linear all;
+}
+
+.headeryeallow {
+	background-color: #e5ed0b;
+}
+
+h1 {
+	font-family: Helvetica;
+	text-transform: uppercase;
+	letter-spacing: 0.3em;
+	cursor: pointer;
+	position: absolute;
+	left: 0;
+	color: white;
+	transition: 300ms linear all;
+}
+
+.h1black {
+	color: #0b1aed;
+}
+
+nav {
+	cursor: pointer;
+	position: absolute;
+	right: 45px;
+	top: 7px;
+}
+
+h2 {
+	margin-top: 120px;
+	color: white;
+	font-family: Helvetica;
+	font-size: 125px;
+	letter-spacing: 0.1em;
+	z-index: 111111;
+	text-transform: uppercase;
+}
+
+div {
+	content: "";
+	display: block;
+	background-color: white;
+	height: 1px;
+	width: 2em;
+	transition: 300ms linear all;
+}
+
+.divblack {
+	background-color: #0b1aed;
+}
+
+
+.first {
+	transition: 300ms linear all;
+}
+.first-rotate {
+	transform: rotate(45deg);
+}
+
+.second {
+	margin-top: 10%;
+}
+
+.third {
+	margin-top: 10%;
+	transition: 300ms linear all;
+}
+
+.third-rotate {
+	transform: rotate(-45deg);
+	margin-top: -13%;
+}
+
+.second-off {
+	opacity: 0;
+}
+
+hr {
+	color: gray;
+	width: 80%;
+	margin-left: 4%;
+}
+
+ul {
+	text-align: right;
+	position: absolute;
+	right: -200px;
+	top: 40px;
+	background-color: white;
+	height: 180px;
+	width: 200px;
+	overflow: hidden;
+}
+
+
+.mylist{
+	overflow: hidden;
+	right: 0px;
+}
+
+li {
+	list-style: none;
+	color: black;
+	text-transform: uppercase;
+	font-family: Helvetica;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+
+	.last {
+		top:400vh;
+	}
+	h2 {
+		font-size: 90px;
+		text-align: center;
+	}
+	h3 {
+	margin: 0 100px 0 100px;
+	font-size: 1.2em;
+	}	
+	.texthtml {
+	margin: 20px 100px 0 100px;
+	font-size: 1.2em;
+	}
+	.profile {
+		top: 10vh;
+		right: none;
+		filter: opacity(0.5);
+	}
+	.logos {
+		width: 600px;
+	}	
+	.logos2 {
+		width: 600px;
+	}
+}
+@media only screen and (max-width: 800px) {
+	h2 {
+		font-size: 50px;
+		text-align: center;
+	}
+	h3 {
+		font-size: 0.9em;
+		margin: 0 10px 0 10px;
+	}	
+	.texthtml {
+		font-size: 0.9em;
+		margin: 10px 10px 0 10px;
+	}
+	.profile {
+		top: 50vh;
+		right: none;
+		filter: opacity(1);
+
+	}
+
+	.logos{
+		width: 300px;
+	}
+	.logos2{
+		top: 140px;
+		width: 300px;
+	}
+	.recruit {
+		height: 40vh;
+	}
+	.skills {
+		top: 200vh;
+	}
+	.last {
+		top: 360vh;
+	}
+
+}
+
